@@ -195,7 +195,7 @@ func Test_BanglaMonthTotalDays(t *testing.T) {
 			ExpectedIndex: 30,
 		},
 		{
-			EnDate:         "2001-04-15 14:18:00",
+			EnDate:         "2018-04-15 14:18:00",
 			ExpectedIndex: 31,
 		},
 	}
@@ -206,7 +206,7 @@ func Test_BanglaMonthTotalDays(t *testing.T) {
 		} else {
 			p := New(d)
 			if p.TotalDays != tc.ExpectedIndex {
-				t.Errorf("Expected %d \nGot: %d", p.TotalDays, tc.ExpectedIndex)
+				t.Errorf("Expected %d \nGot: %d", tc.ExpectedIndex, p.TotalDays)
 			}
 		}
 	}
