@@ -117,7 +117,7 @@ func New(t time.Time) Ponjika {
 		BengaliYear:   BN{enToBnNumber(banglaYear), fmt.Sprintf("%v", banglaYear)},
 		BengaliMonth:  banglaMonth,
 		BengaliDate:   BN{enToBnNumber(banglaDate), fmt.Sprintf("%v", banglaDate)},
-		TotalDays:     monthDays,
+		TotalDays:     totalMonthDays[banglaMonthIndex],
 		Date:          banglaDate,
 		BengaliDay:    WeekDayList[int(localTime.Weekday())],
 		BengaliSeason: banglaSeason,
