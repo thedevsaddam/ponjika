@@ -187,15 +187,15 @@ func TestPonjika_Phonetic(t *testing.T) {
 func Test_BanglaMonthTotalDays(t *testing.T) {
 	layout := "2006-01-02 15:04:05"
 	testCases := []struct {
-		EnDate string
+		EnDate        string
 		ExpectedIndex int
 	}{
 		{
-			EnDate:         "2018-04-01 14:18:00",
+			EnDate:        "2018-04-01 14:18:00",
 			ExpectedIndex: 30,
 		},
 		{
-			EnDate:         "2018-04-15 14:18:00",
+			EnDate:        "2018-04-15 14:18:00",
 			ExpectedIndex: 31,
 		},
 	}
